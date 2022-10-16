@@ -1,7 +1,7 @@
 module_weather.addEventListener('submit', function (e) {
   e.preventDefault();
   console.log('Form triggered');
-  var f_opt = new FormData()
+  const f_opt = new FormData()
   f_opt.append('key', module_weather.querySelector('[name=key]').value)
   f_opt.append('city', module_weather.querySelector('[name=city]').value)
 
